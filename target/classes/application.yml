@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+    username: root
+    password: Wqs123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+    jedis:
+      pool:
+        max-idle: 500
+        min-idle: 50
+        max-wait: -1s
+        max-active: -1
+      shutdown-timeout: 300ms
+
+
+server:
+  port: 8081
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+logging:
+  config: classpath:log4j2.xml
