@@ -15,4 +15,8 @@ public class StudentService {
     public List<Student> findAll(){
        return studentDao.findAll();
     }
+
+    public boolean add(Student student){
+        return studentDao.addStudent(student);
+    }
 }

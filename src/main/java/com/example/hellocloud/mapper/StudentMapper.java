@@ -8,4 +8,6 @@ import java.util.List;
 @Component
 public interface StudentMapper {
     List<Student> findAll();
+
+    boolean addStudent(Student student);
 }

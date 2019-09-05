@@ -15,4 +15,9 @@ public class StudentDao {
     public List<Student> findAll(){
         return studentMapper.findAll();
     }
+
+
+    public boolean addStudent(Student student){
+        return studentMapper.addStudent(student);
+    }
 }

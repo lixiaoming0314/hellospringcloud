@@ -8,7 +8,7 @@
         SELECT * FROM tb_stu
     </select>
 
-    <insert id="insertStudent" parameterType="com.example.hellocloud.bean.Student">
+    <insert id="addStudent" parameterType="com.example.hellocloud.bean.Student">
         insert into tb_stu(name,age,sex,id) value (#{name},#{age},#{sex},#{id})
     </insert>
 </mapper>
